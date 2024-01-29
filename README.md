@@ -20,16 +20,11 @@ We used an initial data set from Goodreads but realized it was missing features 
 3.	Conda
    
 #### Files:
-1.	GoodReads_Predictions.ipynb
-	Jupyter notebook document containing main project code
-2.	requirements.txt
-	packages to be installed via pip in Conda
-3.	books.csv
-	Main data file
-4.	scraped_data_genres_formats_cleaned.tsv
-	Scraped data file
-5.	Scraping_files.zip
-	Supplementary files to reproduce the scraping of extra data (unnecessary for the main code). This is described in more detail in Appendix 1.
+1.	GoodReads_Predictions.ipynb : Jupyter notebook document containing main project code
+2.	requirements.txt : packages to be installed via pip in Conda
+3.	books.csv : Main data file
+4.	scraped_data_genres_formats_cleaned.tsv : Scraped data file
+5.	Scraping_files.zip : Supplementary files to reproduce the scraping of extra data (unnecessary for the main code). This is described in more detail in Appendix 1.
 
 # Making the code functional:
 After completing the installation, the code will be functional after the following steps:
