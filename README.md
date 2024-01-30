@@ -16,19 +16,19 @@ But it's a complex problem because we asked ourselves: are there really metrics 
 
 ## Installation
 
-#### *Prerequisites:*
+### *Prerequisites:*
 1.	Python 3.11.5 environment
 2.	Jupyter Notebook (last tested on version 7.0.6)
 3.	Conda
    
-#### *Files:*
+### *Files:*
 1.	GoodReads_Predictions.ipynb : Jupyter notebook document containing main project code
 2.	requirements.txt : packages to be installed via pip in Conda
 3.	books.csv : Main data file
 4.	scraped_data_genres_formats_cleaned.tsv : Scraped data file
 5.	Scraping_files.zip : Supplementary files to reproduce the scraping of extra data (unnecessary for the main code). This is described in more detail in Appendix 1.
 
-#### *Making the code functional:*
+### *Making the code functional:*
 After completing the installation, the code will be functional after the following steps:
 1.	Place all files in the same directory
 2.	Update the repPath variable with the full path of this directory,  taking care to end with a slash. This variable is the first line of section 1 in the notebook.
@@ -42,24 +42,24 @@ The data scraping process is divided into two parts: scraping and processing. In
 
 A script is used to scrape the data from www.goodreads.com. A delay is added to the scraping method so that the website is not over-solicited. The input file contains the list of ISBN10’s and ISBN13’s to scrape. The user has the choice to do a full or partial scrape. A full scrape is required for both ISBN10 and ISBN13 for the processing step (Part 2) to work. These files are already supplied but can be regenerated.
 
-#### Installation pre-requirements:
+### *Installation pre-requirements:*
 •	The same environment as the required for the main Jupyter notebook
 •	A terminal or an IDE (script launching)
 
-#### *Files:*
+### *Files:*
 1.	GoodReads_Scraping.py
 o	The main script to be run in a terminal or IDE
 2.	ISBNs_to_scrape.tsv
 o	Required input file for the script
 o	Contains the full list of ISBN10’s and ISBN13’s
 
-#### *Using the code:*
+### *Using the code:*
 Several toggles must be modified in order for the script to work as desired:
 •	The directory path must be updated for each machine. It is denoted repPath. Take care to put a slash at the end.
 •	The type of scraping may be modified for a full or partial scrape using the full_scrape Boolean toggle. The partial scrape takes the first ten ISBN’s by default.
 •	The type of ISBN to scrape must also be selected. It is called ScrapeOn_ISBN13. If it is toggled to “True” then the ISBN13 will be used to scrape data. If it is “False”, then the ISBN10 data will be used.
 
- #### *Outputs:*
+ ### *Outputs:*
 This script outputs a single file for each run. It is automatically titled according to the toggles that were selected. The possibilities are:
 1.	GoodReads_scraped_data_FULL_on_ISBN10.tsv
 2.	GoodReads_scraped_data_PARTIAL_on_ISBN10.tsv
@@ -77,11 +77,11 @@ Some books are not present on the GoodReads website. They were apparently remove
 
 The complete, processed data is exported as a tsv file for use in the main project notebook.
 
-#### Installation pre-requirements:
+### *Installation pre-requirements:*
 •	The same environment as the required for the main Jupyter notebook
 •	Jupyter Notebook
 
-#### *Files:*
+### *Files:*
 1.	Goodreads_Scraped_Data_Processing.ipynb
 o	The main notebook containing the code
 2.	GoodReads_scraped_data_FULL_on_ISBN10.tsv
@@ -95,12 +95,12 @@ o	A data file containing the book formats for ISBN’s that were not successfull
 5.	GoodReads_df_exported_for_post-scraping_treatment.tsv
 o	The data from the main project notebook. It was exported from that notebook after the initial importation where the errors were corrected (before cleaning).
 
-#### *Using the code:*
+### *Using the code:*
 The code will work after the following steps:
 •	Place all files in the same directory, preferably a sub-folder in the main project directory
 •	Update the repPath variable with the full path of this sub-folder/directory, taking care to end with a slash. This variable is the first line in section 1 of the notebook.
 
-#### *Outputs:*
+### *Outputs:*
 •	scraped_data_genres_formats_cleaned.tsv, containing:
 o	bookID
 o	a list of the top 7 genres for each book (some have fewer than 7 or none at all)
