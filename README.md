@@ -1,4 +1,4 @@
-# BOOK RATING PREDICITON - GOODREADS
+# BOOK RATING PREDICTION - GOODREADS
 
 # ► What the project does
 
@@ -28,7 +28,7 @@ But it's a complex problem because we asked ourselves: are there really metrics 
 4.	scraped_data_genres_formats_cleaned.tsv : Scraped data file
 5.	Scraping_files.zip : Supplementary files to reproduce the scraping of extra data (unnecessary for the main code). This is described in more detail in Appendix 1.
 
-### *Making the code functional:*
+## Making the code functional:
 After completing the installation, the code will be functional after the following steps:
 1.	Place all files in the same directory
 2.	Update the repPath variable with the full path of this directory,  taking care to end with a slash. This variable is the first line of section 1 in the notebook.
