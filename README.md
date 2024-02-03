@@ -2,7 +2,7 @@
 
 # ► What the project does
 
-This project predicts the ratings of books using data from [www.goodreads.com](www.goodreads.com). Ratings range from 0 to 5. Two models are compared in a one-to-one manner (same training and testing sets): polynomial regression and random forest regression. This is performed first on a base data set, then with the addition of extra scraped features using the same training and testing split.
+This project predicts the ratings of books using data from [www.goodreads.com](https://www.goodreads.com). Ratings range from 0 to 5. Two models are compared in a one-to-one manner (same training and testing sets): polynomial regression and random forest regression. This is performed first on a base data set, then with the addition of extra scraped features using the same training and testing split.
 
 The impact of different features is studied in detail. In particular, variants of the models are run to account for cases where the author and/or publisher are completely new. SMOTE is not used, but could be a good method for improving results for classes of book ratings that are infrequent, in particular ratings <3.5.
 
