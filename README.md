@@ -108,15 +108,16 @@ The code will work after the following steps:
     - the book format
 
 # ► Credit
-The primary project is created and maintained by:<br>
-
-*--Order determined with a random number generator--*
--	Lydia Meftah
+The primary project was created by:<br>
 -	Andrew Wieber
 -	Loïc Martins
 -	Phuc Nguyen
 -	Evan Kim
+-  Lydia Meftah
 
-The scraping and processing code is written and maintained by:
+The scraping and processing code was written by:<br>
+-	Andrew Wieber
+
+This version of the project is maintained by:
 -	Andrew Wieber
 
